@@ -6,10 +6,10 @@ import java.util.Random;
 public class Task2 {
     public static void main(String[] args) {
         int[] arr = createRandomArray();
-        System.out.printf("Ср.значение по массиву %s равно %.2f.", Arrays.toString(arr), average(arr));
+        System.out.printf("Ср.значение по массиву %s равно %.2f.", Arrays.toString(arr), calculateAverage(arr));
     }
 
-    private static double average(int[] arr) {
+    private static double calculateAverage(int[] arr) {
         double averageArray = 0.0;
         for (int value : arr) {
             averageArray += value;
